@@ -70,6 +70,21 @@ The [Rijndael S-box](https://en.wikipedia.org/wiki/Rijndael_S-box) is a `256` by
 Useful read: [The Laws of Cryptography Advanced Encryption Standard: S-Boxes](http://www.cs.utsa.edu/~wagner/laws/SBoxes.html)
 
 
+###### IDAPython constant search
+```python
+sbox = "63 7C 77 7B F2 6B 6F C5 30 01 67 2B"
+rcon = "8D 01 02 04 08 10 20 40 80 1B 36"
+addr = idc.get_inf_attr(INF_MIN_EA)
+addr = idc.find_binary(addr, SEARCH_DOWN, sbox) 
+if addr != idc.BADADDR:
+  print ("RCON located at 0x%x" % addr)
+   
+addr = idc.find_binary(addr, SEARCH_DOWN, rcon) 
+if addr != idc.BADADDR:
+   print ("SBOX located at 0x%x" % addr)
+```
+
+
 ##### AddRounds
 Simple XOR loop. The XOR loop is sometimes inline in the main AES function or could be its own function. 
 
