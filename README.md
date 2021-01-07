@@ -5,6 +5,7 @@ This repo is in progress. The goal is to have executables along with their corre
 #### Status 
 
  - AES - complete.
+ - SALSA20 - binaries complete, readme.md in progress
  - MD5 - in progress.
  - BASE664 - in progress.
  - RC4 - in progress.
