@@ -22,4 +22,4 @@ This repo is in progress. The goal is to have executables along with their corre
 #### Contrbute  
 
  - Pull request
- - Create bug and submit files. Note: Bitbucket allows for anonymous bug creation without creating an account. 
+ - Create bug and submit files. 
