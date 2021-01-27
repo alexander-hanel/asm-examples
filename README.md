@@ -7,6 +7,8 @@ This repo is in progress. The goal is to have executables along with their corre
  - AES - complete.
  - SALSA20 - binaries complete, readme.md in progress
  - MD5 - in progress.
+ - SHA256 - single binary, in progess, readme.md in progress
+ - SHA256-HMAC - single binary, in progess, readme.md in progress
  - BASE664 - in progress.
  - RC4 - in progress.
  - RSA - in progress. 
